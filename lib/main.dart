@@ -1,26 +1,25 @@
 import 'package:flutter/material.dart';
-import 'package:fooddeliveryapp/pages/login_page.dart';
-import 'package:fooddeliveryapp/themes/theme_provider.dart';
-import 'package:provider/provider.dart';
+import 'package:foodora/screens/on_boarding/starting_screen.dart';
 
 void main() {
-  runApp(
-    ChangeNotifierProvider(
-      create: (context) => ThemeProvider(),
-      child: const MyApp(),
-    ),
-  );
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
+  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
-      home: LoginPage(),
-      theme: Provider.of<ThemeProvider>(context).themeData,
+      theme: ThemeData(
+        fontFamily: "Metropolis",
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        useMaterial3: true,
+      ),
+      home: const StartupPage(),
     );
   }
 }

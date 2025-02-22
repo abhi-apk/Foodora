@@ -1,6 +1,6 @@
 {
-    "name": "fooddeliveryapp",
-    "short_name": "fooddeliveryapp",
+    "name": "foodora",
+    "short_name": "foodora",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
