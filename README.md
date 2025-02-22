@@ -70,7 +70,6 @@ A modern food delivery app built using Flutter, inspired by [Meal Monkey](https:
 - **Flutter** - Cross-platform mobile development  
 - **Firebase** - Backend services  
 - **Razorpay** - Payment gateway integration  
-- **Provider/Bloc** - State management (if applicable)  
 
 ---
 
